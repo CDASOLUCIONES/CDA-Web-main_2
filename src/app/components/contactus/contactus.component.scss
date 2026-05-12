@@ -1,0 +1,669 @@
+// ============================================================
+// VARIABLES
+// ============================================================
+$navy:       #002147;
+$navy-dark:  #001224;
+$teal:       #007A7C;
+$teal-dark:  #006365;
+$white:      #FFFFFF;
+$border:     rgba(255, 255, 255, 0.14);
+$border-form:#D1D5DB;
+$error:      #F87171;
+$text-muted: rgba(255, 255, 255, 0.68);
+$gray-label: #6B7280;
+
+// ============================================================
+// WRAPPER
+// ============================================================
+.contacto-page {
+  background-color: $navy;
+  min-height: 100vh;
+}
+
+// ============================================================
+// HERO
+// ============================================================
+.contacto-hero {
+  padding: 120px 5% 60px;
+
+  &__wrap {
+    max-width: 1100px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 360px;
+
+    gap: 40px;
+    align-items: center;
+  }
+
+  &__text {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+  }
+
+  &__overline {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: $teal;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: clamp(32px, 4vw, 52px);
+    font-weight: 800;
+    color: $white;
+    line-height: 1.15;
+    margin: 0;
+  }
+
+  &__sub {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    color: $text-muted;
+    line-height: 1.7;
+    max-width: 540px;
+  }
+
+  &__mail {
+    color: $teal;
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover {
+      opacity: .75;
+    }
+  }
+
+  &__badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 4px;
+  }
+
+  &__img {
+    display: flex;
+    justify-content: center;
+
+    img {
+      width: 100%;
+      max-width: 320px;
+      border-radius: 16px;
+      object-fit: cover;
+      opacity: .95;
+    }
+  }
+
+  @media (max-width: 900px) {
+    padding: 110px 5% 50px;
+
+    &__wrap {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+
+    &__img {
+      display: none;
+    }
+  }
+}
+
+// ============================================================
+// BADGES
+// ============================================================
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  padding: 7px 14px;
+
+  background: rgba(0, 122, 124, 0.12);
+  border: 1px solid rgba(0, 122, 124, 0.25);
+
+  border-radius: 999px;
+
+  font-family: 'Inter', sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+
+  color: rgba(255, 255, 255, 0.86);
+}
+
+// ============================================================
+// FORM SECTION
+// ============================================================
+.contacto-form-section {
+  background: #F4F7F9;
+  padding: 50px 5% 70px;
+
+  &__wrap {
+    max-width: 760px;
+    margin: 0 auto;
+  }
+}
+
+// ============================================================
+// SUCCESS
+// ============================================================
+.form-success {
+  background: $white;
+  border-radius: 16px;
+  padding: 56px 40px;
+  text-align: center;
+
+  box-shadow: 0 8px 30px rgba(0, 33, 71, 0.08);
+
+  animation: fadeUp .45s ease both;
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+
+    color: $navy;
+
+    margin-bottom: 14px;
+  }
+
+  &__msg {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.7;
+
+    color: #4A5568;
+
+    max-width: 460px;
+    margin: 0 auto 30px;
+  }
+
+  &__back {
+    background: transparent;
+    border: 1.5px solid $teal;
+
+    color: $teal;
+
+    padding: 12px 24px;
+
+    border-radius: 8px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+    &:hover {
+      background: $teal;
+      color: $white;
+    }
+  }
+}
+
+// ============================================================
+// FORM
+// ============================================================
+.cda-form {
+  background: $white;
+
+  border-radius: 16px;
+
+  overflow: hidden;
+
+  box-shadow: 0 8px 30px rgba(0, 33, 71, 0.08);
+
+  animation: fadeUp .45s ease both;
+
+  // ============================================================
+  // HEADER
+  // ============================================================
+  &__header {
+    background: $navy;
+
+    padding: 30px 40px 26px;
+
+    border-bottom: 3px solid $teal;
+  }
+
+  &__title {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    font-weight: 700;
+
+    color: $white;
+
+    margin: 0 0 8px;
+  }
+
+  &__subtitle {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+
+    color: $text-muted;
+
+    margin: 0;
+  }
+
+  // ============================================================
+  // BODY
+  // ============================================================
+  &__body {
+    padding: 32px 40px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+  }
+
+  // ============================================================
+  // ROWS
+  // ============================================================
+  &__row {
+    display: flex;
+    flex-direction: column;
+
+    gap: 18px;
+
+    &--2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+    }
+  }
+
+  // ============================================================
+  // FIELD
+  // ============================================================
+  &__field {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+
+    &--check {
+      gap: 8px;
+    }
+
+    &.error {
+      .cda-form__input,
+      .cda-form__textarea,
+      .cda-form__select {
+        border-color: $error;
+      }
+    }
+  }
+
+  // ============================================================
+  // LABEL
+  // ============================================================
+  &__label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12.5px;
+    font-weight: 600;
+
+    color: #374151;
+  }
+
+  &__optional {
+    font-size: 11px;
+    color: $gray-label;
+    margin-left: 4px;
+  }
+
+  // ============================================================
+  // INPUT BASE
+  // ============================================================
+  %input-base {
+    width: 100%;
+
+    padding: 13px 16px;
+
+    background: #FAFAFA;
+
+    border: 1.5px solid $border-form;
+    border-radius: 8px;
+
+    outline: none;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+
+    color: #111827;
+
+    transition: .2s ease;
+
+    &::placeholder {
+      color: #9CA3AF;
+    }
+
+    &:focus {
+      border-color: $teal;
+      background: $white;
+      box-shadow: 0 0 0 3px rgba(0, 122, 124, 0.08);
+    }
+  }
+
+  &__input {
+    @extend %input-base;
+  }
+
+  &__textarea {
+    @extend %input-base;
+
+    resize: vertical;
+    min-height: 120px;
+
+    line-height: 1.6;
+  }
+
+  // ============================================================
+  // SELECT
+  // ============================================================
+  &__select-wrap {
+    position: relative;
+  }
+
+  &__select {
+    @extend %input-base;
+
+    appearance: none;
+    cursor: pointer;
+
+    padding-right: 40px;
+  }
+
+  &__select-arrow {
+    position: absolute;
+
+    top: 50%;
+    right: 14px;
+
+    transform: translateY(-50%);
+
+    pointer-events: none;
+
+    color: $gray-label;
+  }
+
+  // ============================================================
+  // CHECKBOX
+  // ============================================================
+  &__check-label {
+    display: flex;
+    align-items: flex-start;
+
+    gap: 12px;
+
+    cursor: pointer;
+  }
+
+  &__checkbox {
+    position: absolute;
+    opacity: 0;
+
+    &:checked ~ .cda-form__check-custom {
+      background: $teal;
+      border-color: $teal;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+
+  &__check-custom {
+    width: 20px;
+    height: 20px;
+
+    border-radius: 4px;
+
+    border: 1.5px solid $border-form;
+
+    background: #FAFAFA;
+
+    flex-shrink: 0;
+
+    margin-top: 1px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: .2s;
+
+    &::after {
+      content: '';
+
+      width: 10px;
+      height: 6px;
+
+      border-left: 2px solid $white;
+      border-bottom: 2px solid $white;
+
+      transform: rotate(-45deg);
+
+      opacity: 0;
+    }
+  }
+
+  &__check-text {
+    font-family: 'Inter', sans-serif;
+    font-size: 13.5px;
+
+    color: #4B5563;
+
+    line-height: 1.6;
+  }
+
+  &__link {
+    color: $teal;
+    font-weight: 600;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  // ============================================================
+  // ERROR
+  // ============================================================
+  &__error {
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+
+    color: $error;
+  }
+
+  // ============================================================
+  // FOOTER
+  // ============================================================
+  &__footer {
+    padding: 24px 40px 30px;
+
+    background: #F9FAFB;
+
+    border-top: 1px solid #F0F0F0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 14px;
+  }
+
+  // ============================================================
+  // BUTTON
+  // ============================================================
+  &__submit {
+    background: $teal;
+    color: $white;
+
+    border: none;
+    border-radius: 999px;
+
+    padding: 15px 42px;
+
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+
+    cursor: pointer;
+
+    transition: .25s;
+
+    &:hover:not(:disabled) {
+      background: $teal-dark;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 122, 124, 0.28);
+    }
+
+    &:disabled {
+      opacity: .75;
+      cursor: not-allowed;
+    }
+  }
+
+  &__spinner {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    svg {
+      animation: spin .8s linear infinite;
+    }
+  }
+
+  &__note {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+    font-family: 'Inter', sans-serif;
+    font-size: 12px;
+
+    color: $gray-label;
+  }
+
+  // ============================================================
+  // RESPONSIVE
+  // ============================================================
+  @media (max-width: 768px) {
+
+    &__header {
+      padding: 26px 24px 22px;
+    }
+
+    &__body {
+      padding: 24px;
+      gap: 18px;
+    }
+
+    &__footer {
+      padding: 22px 24px 28px;
+    }
+
+    &__row--2 {
+      grid-template-columns: 1fr;
+    }
+
+    &__submit {
+      width: 100%;
+    }
+  }
+}
+
+// ============================================================
+// REQUIRED
+// ============================================================
+.req {
+  color: $error;
+  margin-left: 2px;
+}
+
+// ============================================================
+// ANIMATIONS
+// ============================================================
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+// ── Input con ícono interno ──────────────────
+.cda-form {
+
+  &__input-wrap {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  &__input-icon {
+    position: absolute;
+    left: 14px;
+    color: #9CA3AF;
+    pointer-events: none;
+    transition: color .2s ease;
+    flex-shrink: 0;
+  }
+
+  &__input--icon {
+    padding-left: 42px;
+  }
+
+  // Cuando el input-wrap tiene foco, colorear el ícono
+  &__input--icon:focus ~ .cda-form__input-icon,
+  &__input-wrap:focus-within &__input-icon {
+    color: $teal;
+  }
+
+  // ── optgroup styling ──────────────────────
+  select optgroup {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: #9CA3AF;
+    background: #fff;
+    letter-spacing: 0.04em;
+  }
+
+  select option {
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: #111827;
+    background: #fff;
+    padding: 6px 0;
+  }
+}

@@ -1,0 +1,388 @@
+/* ============================================================
+   CORPORATE STANDARDS
+============================================================ */
+.corporate-standards {
+  background: #001529;
+  padding: 110px 24px;
+}
+
+.corporate-container {
+  max-width: 1200px;
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.corporate-title {
+  font-size: 56px;
+  line-height: 1.15;
+  font-weight: 400;
+  color: #ffffff;
+  margin-bottom: 90px;
+  letter-spacing: -1px;
+}
+
+.corporate-features {
+  width: 100%;
+  max-width: 1000px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.corporate-feature {
+  flex: 1;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.feature-icon {
+  width: 95px;
+  height: 95px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #00b3b6;
+  margin-bottom: 24px;
+}
+
+.feature-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.corporate-feature h3 {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.corporate-action {
+  margin-top: 90px;
+}
+
+.corporate-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+
+  padding: 18px 38px;
+
+  border: 1px solid #007a7c;
+  border-radius: 6px;
+
+  color: #ffffff;
+  text-decoration: none;
+
+  transition: all 0.3s ease;
+}
+
+.corporate-btn:hover {
+  background: rgba(0, 122, 124, 0.15);
+}
+
+/* ============================================================
+   HERO INTERNO
+============================================================ */
+.firma-hero {
+  padding: 100px 5%;
+  background: #ffffff;
+}
+
+.firma-hero-container {
+  max-width: 1300px;
+  margin: 0 auto;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.firma-hero-image img {
+  width: 100%;
+  border-radius: 24px;
+}
+
+.firma-hero-content h1 {
+  font-size: 52px;
+  line-height: 1.15;
+  color: #001a33;
+  margin-bottom: 40px;
+  font-weight: 700;
+}
+
+.hero-statement {
+  border-left: 4px solid #007a7c;
+  padding-left: 22px;
+
+  font-size: 18px;
+  line-height: 1.8;
+  color: #333333;
+  text-align: justify;
+}
+
+/* ============================================================
+   MADUREZ
+============================================================ */
+.corporate-maturity {
+  background: #f7f9fc;
+  padding: 100px 5%;
+}
+
+.corporate-maturity-container {
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.corporate-maturity h2 {
+  font-size: 38px;
+  color: #001a33;
+  margin-bottom: 36px;
+}
+
+.corporate-maturity p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #4a5568;
+  margin-bottom: 24px;
+  text-align: justify;
+}
+
+/* ============================================================
+   FOUNDATIONS
+============================================================ */
+.consulting-foundations {
+  padding: 110px 5%;
+  background: #ffffff;
+  margin-top: 0;
+  padding: 0;
+}
+
+.foundations-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.foundations-container h2 {
+  text-align: center;
+  font-size: 42px;
+  color: #001a33;
+  margin-bottom: 70px;
+
+}
+
+.foundations-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 40px;
+}
+
+.foundation-card {
+  padding: 40px 30px;
+  border-radius: 20px;
+  background: #ffffff;
+
+  box-shadow:
+    0px 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.foundation-icon {
+  width: 70px;
+  height: 70px;
+
+  color: #007a7c;
+  margin-bottom: 28px;
+}
+
+
+.foundation-card h3 {
+  font-size: 24px;
+  color: #001a33;
+  margin-bottom: 20px;
+}
+
+.foundation-card p {
+  color: #4a5568;
+  line-height: 1.8;
+  text-align: justify;
+  margin-top: 20px;
+}
+
+/* ============================================================
+   COMPLIANCE
+============================================================ */
+.compliance-section {
+  background: #f7f9fc;
+  padding: 120px 5%;
+}
+
+.compliance-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.compliance-container h2 {
+  text-align: center;
+  font-size: 46px;
+  color: #001a33;
+  margin-bottom: 30px;
+}
+
+.compliance-intro {
+  max-width: 900px;
+  margin: 0 auto 70px auto;
+
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #4a5568;
+}
+
+.compliance-box {
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+
+  border: 1px solid #dbe4ef;
+
+  box-shadow:
+    0px 12px 40px rgba(0, 0, 0, 0.05);
+}
+
+.compliance-header {
+  background: #001a33;
+  color: #ffffff;
+
+  padding: 28px 40px;
+
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.compliance-items {
+  padding: 20px 40px 40px;
+}
+
+.compliance-item {
+  padding: 28px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.compliance-item:last-child {
+  border-bottom: none;
+}
+
+.compliance-item h3 {
+  color: #001a33;
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.compliance-item p {
+  color: #4a5568;
+  line-height: 1.8;
+}
+
+.compliance-note {
+  margin-top: 28px;
+
+  text-align: center;
+  font-size: 14px;
+  color: #718096;
+  line-height: 1.7;
+}
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+@media (max-width: 992px) {
+
+  .corporate-title {
+    font-size: 44px;
+  }
+
+  .corporate-features {
+    gap: 24px;
+  }
+
+  .firma-hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .firma-hero-content h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .desktop-break {
+    display: none;
+  }
+
+  .corporate-features {
+    flex-direction: column;
+    gap: 54px;
+  }
+
+  .corporate-title {
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+
+  .corporate-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .firma-hero {
+    padding: 70px 24px;
+  }
+
+  .firma-hero-content h1 {
+    font-size: 34px;
+  }
+
+  .corporate-maturity,
+  .consulting-foundations,
+  .compliance-section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .compliance-header {
+    padding: 24px;
+    font-size: 18px;
+  }
+
+  .compliance-items {
+    padding: 12px 24px 24px;
+  }
+
+  .compliance-container h2,
+  .foundations-container h2 {
+    font-size: 34px;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+#historia-valores {
+  scroll-margin-top: 120px;
+}

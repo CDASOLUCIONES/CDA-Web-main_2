@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/e1a19cda-5aed-45f1-aedb-1724609b4488/resourceGroups/Betacda_group/providers/Microsoft.Web/sites/Betacda",
+    "appService.deploySubpath": "."
+}

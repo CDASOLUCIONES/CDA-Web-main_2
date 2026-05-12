@@ -1,0 +1,259 @@
+/* ============================================================
+   COMPLIANCE
+============================================================ */
+.compliance-section {
+  background: #f7f9fc;
+  padding: 120px 5%;
+}
+
+.compliance-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.compliance-container h2 {
+  text-align: center;
+  font-size: 46px;
+  color: #001a33;
+  margin-bottom: 30px;
+}
+
+.compliance-intro {
+  max-width: 900px;
+  margin: 0 auto 70px auto;
+
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #4a5568;
+}
+
+.compliance-box {
+  background: #ffffff;
+  border-radius: 24px;
+  overflow: hidden;
+
+  border: 1px solid #dbe4ef;
+
+  box-shadow:
+    0px 12px 40px rgba(0, 0, 0, 0.05);
+}
+
+.compliance-header {
+  background: #001a33;
+  color: #ffffff;
+
+  padding: 28px 40px;
+
+  font-size: 20px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+.compliance-items {
+  padding: 20px 40px 40px;
+}
+
+.compliance-item {
+  padding: 28px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.compliance-item:last-child {
+  border-bottom: none;
+}
+
+.compliance-item h3 {
+  color: #001a33;
+  font-size: 22px;
+  margin-bottom: 14px;
+}
+
+.compliance-item p {
+  color: #4a5568;
+  line-height: 1.8;
+}
+
+.compliance-note {
+  margin-top: 28px;
+
+  text-align: center;
+  font-size: 20px;
+  color: #718096;
+  line-height: 1.7;
+}
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+@media (max-width: 992px) {
+
+  .corporate-title {
+    font-size: 44px;
+  }
+
+  .corporate-features {
+    gap: 24px;
+  }
+
+  .firma-hero-container {
+    grid-template-columns: 1fr;
+  }
+
+  .firma-hero-content h1 {
+    font-size: 42px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .desktop-break {
+    display: none;
+  }
+
+  .corporate-features {
+    flex-direction: column;
+    gap: 54px;
+  }
+
+  .corporate-title {
+    font-size: 36px;
+    margin-bottom: 60px;
+  }
+
+  .corporate-btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .firma-hero {
+    padding: 70px 24px;
+  }
+
+  .firma-hero-content h1 {
+    font-size: 34px;
+  }
+
+  .corporate-maturity,
+  .consulting-foundations,
+  .compliance-section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+.compliance-header {
+  padding: 24px;
+  font-size: 18px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  text-align: center;
+}
+
+  .compliance-items {
+    padding: 12px 24px 24px;
+  }
+
+  .compliance-container h2,
+  .foundations-container h2 {
+    font-size: 34px;
+  }
+}
+
+
+/* ============================================================
+   TRANSPARENCIA
+============================================================ */
+.transparency-block {
+  background: #F8FAFC;
+
+  border-top: 1px solid #E2E8F0;
+
+  margin-top: 48px;
+  padding: 32px;
+
+  border-radius: 0 0 8px 8px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  text-align: center;
+}
+.transparency-block h4 {
+  color: #001A33;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  margin-bottom: 16px;
+}
+
+.transparency-text {
+  color: #4A5568;
+
+  font-size: 16px;
+  line-height: 1.5;
+
+  max-width: 760px;
+}
+
+.transparency-btn {
+  display: inline-block;
+
+  background: #001A33;
+  color: #FFFFFF;
+
+  padding: 12px 24px;
+
+  border-radius: 4px;
+
+  text-decoration: none;
+  font-weight: 700;
+
+  margin-top: 20px;
+
+  transition:
+    background 0.25s ease,
+    transform 0.25s ease;
+}
+
+.transparency-btn:hover {
+  background: #003366;
+  transform: translateY(-2px);
+}
+
+.transparency-note {
+  margin-top: 16px;
+
+  font-size: 13px;
+  font-style: italic;
+
+  color: #64748B;
+
+  line-height: 1.5;
+}
+
+/* ============================================================
+   RESPONSIVE
+============================================================ */
+@media (max-width: 768px) {
+
+  .transparency-block {
+    padding: 24px;
+  }
+
+  .transparency-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+}
