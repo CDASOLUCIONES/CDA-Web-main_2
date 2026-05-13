@@ -45,7 +45,7 @@ jobs:
           api_location: ""
 
           # 👇 IMPORTANTE
-          output_location: "dist/cda/browser"
+          output_location: "dist/cda"
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
