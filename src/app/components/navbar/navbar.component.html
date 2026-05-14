@@ -1,48 +1,78 @@
 <nav class="navbar" [class.scrolled]="scrolled">
+
   <div class="navbar__container">
 
     <!-- Logo -->
     <a class="navbar__logo" routerLink="/">
-      <img src="assets/LOGOCDASINFONDO.png" alt="CDA logo" class="navbar__logo-img" />
+      <img
+        src="assets/LOGOCDASINFONDO.png"
+        alt="CDA logo"
+        class="navbar__logo-img"
+      />
     </a>
 
     <!-- Desktop Nav -->
     <ul class="navbar__links">
       <ng-container *ngFor="let item of navItems; let i = index">
+
         <li class="navbar__item">
-          <a class="navbar__link"
-             [routerLink]="item.route"
-             routerLinkActive="active"
-             [routerLinkActiveOptions]="{exact: item.route === '/'}">
+          <a
+            class="navbar__link"
+            [routerLink]="item.route"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: item.route === '/' }">
+
             {{ item.label }}
           </a>
         </li>
 
         <!-- Separator -->
-        <li class="navbar__sep" *ngIf="i < navItems.length - 1" aria-hidden="true"></li>
+        <li
+          class="navbar__sep"
+          *ngIf="i < navItems.length - 1"
+          aria-hidden="true">
+        </li>
+
       </ng-container>
     </ul>
 
     <!-- Hamburger -->
-    <button class="navbar__hamburger" (click)="toggleMobile()" aria-label="Menú">
-      <span [class.open]="mobileOpen"></span>
-      <span [class.open]="mobileOpen"></span>
-      <span [class.open]="mobileOpen"></span>
+    <button
+      class="navbar__hamburger"
+      [class.open]="mobileOpen"
+      (click)="toggleMobile()"
+      aria-label="Abrir menú">
+
+      <span></span>
+      <span></span>
+      <span></span>
+
     </button>
+
   </div>
 
   <!-- Mobile Menu -->
   <div class="navbar__mobile" [class.open]="mobileOpen">
+
     <ul>
+
       <ng-container *ngFor="let item of navItems">
+
         <li>
-          <a [routerLink]="item.route"
-             class="navbar__mobile-link"
-             (click)="toggleMobile()">
+          <a
+            [routerLink]="item.route"
+            class="navbar__mobile-link"
+            (click)="toggleMobile()">
+
             {{ item.label }}
+
           </a>
         </li>
+
       </ng-container>
+
     </ul>
+
   </div>
+
 </nav>

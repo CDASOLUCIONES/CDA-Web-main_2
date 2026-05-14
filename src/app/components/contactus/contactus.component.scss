@@ -667,3 +667,12 @@ $gray-label: #6B7280;
     padding: 6px 0;
   }
 }
+
+.cda-form__send-error {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #c0392b;
+  font-size: 0.85rem;
+  margin-bottom: 12px;
+}

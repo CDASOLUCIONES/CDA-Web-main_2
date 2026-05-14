@@ -225,9 +225,9 @@
                 <select id="infoSolicitada" formControlName="infoSolicitada"
                         class="cda-form__select">
                   <option value="" disabled selected>Selecciona una opción</option>
-                  <option value="talentia">Implementación Integral de Solución Talentia</option>
-                  <option value="consultoria">Optimización de Modelos de Capital Humano</option>
-                  <option value="consultoria">Integración de Ecosistemas Críticos</option>
+                  <option value="Implementación Integral de Solución Talentia">Implementación Integral de Solución Talentia</option>
+                  <option value="Optimización de Modelos de Capital Humano">Optimización de Modelos de Capital Humano</option>
+                  <option value="Integración de Ecosistemas Críticos">Integración de Ecosistemas Críticos</option>
                 </select>
                 <svg class="cda-form__select-arrow" width="12" height="8"
                      viewBox="0 0 12 8" fill="none" stroke="currentColor"
@@ -248,9 +248,9 @@
                 <select id="colaboradores" formControlName="colaboradores"
                         class="cda-form__select">
                   <option value="" disabled selected>Selecciona un rango</option>
-                  <option value="1-100">1 a 100 empleados</option>
-                  <option value="100-400">100 a 400 empleados</option>
-                  <option value="400+">Más de 400 empleados</option>
+                  <option value="1 a 100 empleados">1 a 100 empleados</option>
+                  <option value="100 a 400 empleados">100 a 400 empleados</option>
+                  <option value="Más de 400 empleados">Más de 400 empleados</option>
                 </select>
                 <svg class="cda-form__select-arrow" width="12" height="8"
                      viewBox="0 0 12 8" fill="none" stroke="currentColor"
@@ -274,14 +274,14 @@
               <div class="cda-form__select-wrap">
                 <select id="sector" formControlName="sector" class="cda-form__select">
                   <option value="" disabled selected>Selecciona tu industria</option>
-                  <option value="tech">Tecnología / Software</option>
-                  <option value="banca">Banca / Finanzas / Seguros</option>
-                  <option value="retail">Retail / E-commerce</option>
-                  <option value="manufactura">Manufactura / Industrial</option>
-                  <option value="salud">Salud / Farmacéutica</option>
-                  <option value="consumo">Consumo Masivo</option>
-                  <option value="servicios">Servicios Profesionales / Consultoría</option>
-                  <option value="otro">Otro</option>
+                  <option value="Tecnología / Software">Tecnología / Software</option>
+                  <option value="Banca / Finanzas / Seguros">Banca / Finanzas / Seguros</option>
+                  <option value="Retail / E-commerce">Retail / E-commerce</option>
+                  <option value="Manufactura / Industrial">Manufactura / Industrial</option>
+                  <option value="Salud / Farmacéutica">Salud / Farmacéutica</option>
+                  <option value="Consumo Masivo">Consumo Masivo</option>
+                  <option value="Servicios Profesionales / Consultoría">Servicios Profesionales / Consultoría</option>
+                  <option value="Otro">Otro</option>
                 </select>
                 <svg class="cda-form__select-arrow" width="12" height="8"
                      viewBox="0 0 12 8" fill="none" stroke="currentColor"
@@ -335,6 +335,16 @@
           </div>
 
         </div><!-- /body -->
+        
+        <!-- ── Error de envío ── -->
+        <div class="cda-form__send-error" *ngIf="errorMsg">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"
+              stroke="currentColor" stroke-width="1.6" stroke-linecap="round">
+            <circle cx="8" cy="8" r="7"/>
+            <path d="M8 5v3M8 10v1"/>
+          </svg>
+          {{ errorMsg }}
+        </div>
 
         <!-- ── Submit ── -->
         <div class="cda-form__footer">
